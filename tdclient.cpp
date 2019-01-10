@@ -22,7 +22,7 @@ TdClient::TdClient()
 
     timer_send = new QTimer(this);
     timer_send->setInterval(20000);
-    connect(timer_send, &QTimer::timeout, this, [&]() { update_send(); });
+    //connect(timer_send, &QTimer::timeout, this, [&]() { update_send(); });
     qRegisterMetaType<Chat>();
 
     LogOut::GetInstance()->setMaxLine(1250);
